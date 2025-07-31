@@ -1,6 +1,6 @@
 import http from 'k6/http';
 import { sleep, check } from 'k6';
-const postLogin = JSON.parse(open('../fixtures/postLogin.json'))
+const postLogin = JSON.parse(open('../fixtures/postLogin.json'));
 
 export const options = {
     stages: [
@@ -21,7 +21,7 @@ export default function () {
 
     const params = {
         headers: {
-        'Content-Type': 'application/json',
+            'Content-Type': 'application/json',
         },
     };
 
